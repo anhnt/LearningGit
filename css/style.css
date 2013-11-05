@@ -1,0 +1,70 @@
+html, body {
+  font-size: 12px;
+  font-weight: normal; }
+
+section.social {
+  background-color: #25292c;
+  color: #fff; }
+  section.social .contact {
+    color: #fff;
+    line-height: 45px;
+    margin-right: 10px; }
+  section.social a.contact:hover {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer; }
+  section.social ul.social-share {
+    list-style: none; }
+    section.social ul.social-share li {
+      display: inline-block;
+      *display: inline; }
+      section.social ul.social-share li a {
+        line-height: 35px;
+        color: #fff; }
+        section.social ul.social-share li a i.fa-stack-1x {
+          color: #666; }
+        section.social ul.social-share li a i.fa-circle {
+          -webkit-transition: all .5s ease-in-out;
+          -moz-transition: all .5s ease-in-out;
+          -o-transition: all .5s ease-in-out;
+          -ms-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out; }
+      section.social ul.social-share li:hover i.fa-stack-1x {
+        color: #fff; }
+      section.social ul.social-share li.facebook:hover i.fa-circle {
+        color: #4c66a4; }
+      section.social ul.social-share li.twitter:hover i.fa-circle {
+        color: #2c77ba; }
+      section.social ul.social-share li.dribbble:hover i.fa-circle {
+        color: #ea4c89; }
+      section.social ul.social-share li.linkedin:hover i.fa-circle {
+        color: #006699; }
+      section.social ul.social-share li.rss:hover i.fa-circle {
+        color: #ff6600; }
+  section.social div.search {
+    display: inline-block;
+    line-height: 35px;
+    margin-left: 5px; }
+    section.social div.search i.fa-search {
+      color: #666;
+      left: -3px; }
+    section.social div.search input.search-text {
+      height: 28px;
+      line-height: 28px;
+      border-radius: 28px;
+      width: 28px;
+      background: url(../img/icon-search.png) 7px 8px no-repeat white;
+      border: none;
+      padding-left: 27px;
+      cursor: pointer;
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      -ms-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out; }
+      section.social div.search input.search-text:focus {
+        width: 170px; }
+
+section.main-header {
+  min-height: 86px;
+  background-color: #323b44; }
