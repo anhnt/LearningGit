@@ -1,4 +1,3 @@
-PhoneScanner
+My project just for learning git
 ============
 
-Scan all phone on the web
