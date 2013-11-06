@@ -99,8 +99,10 @@ footer section.main-footer {
     padding: 0; }
 footer section.copyright {
   background-color: #25292c; }
+  footer section.copyright ul.social-share {
+    line-height: 60px; }
   footer section.copyright div.copyname {
-    line-height: 35px;
+    line-height: 60px;
     color: #fff; }
 
 .fullwidthbanner-container {
