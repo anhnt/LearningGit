@@ -1,13 +1,15 @@
 (function($){
 	$(function(){
-		$('#menu').stop().superfish();
+		var menu = $('#menu');
+		var featured = $('#featured');
 
+		// Superfish menu
+		menu.stop().superfish();
 
 		// Revolution slider
-
 		if ($.fn.cssOriginal != undefined)
 		$.fn.css = jQuery.fn.cssOriginal;
-		$('.fullwidthbanner').revolution({
+		featured.find('.fullwidthbanner').revolution({
 			delay:9000,												
 				startwidth:890,
 				startheight:450,
