@@ -111,3 +111,16 @@ footer section.copyright {
   padding: 0;
   max-height: 450px !important;
   overflow: hidden; }
+
+@media (max-width: 767px) {
+  header div.navbar-header button {
+    background-color: #0488cd;
+    top: 20px; }
+    header div.navbar-header button span.icon-bar {
+      background-color: #fff; }
+
+  footer div, footer ul {
+    width: 100%;
+    line-height: 35px;
+    text-align: center;
+    float: none !important; } }

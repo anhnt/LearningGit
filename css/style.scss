@@ -162,3 +162,27 @@ footer{
    max-height:450px !important;  // Same value as in OPTIONS the <strong>startheight</strong> parameter
    overflow:hidden;
 }
+
+// Responsive style
+// Xtra small devices
+@media (max-width: 767px){
+	header{
+		div.navbar-header{
+			button{
+				background-color: #0488cd;
+				top: 20px;
+				span.icon-bar{
+					background-color: #fff;
+				}	
+			}
+		}
+	}
+	footer{
+		div, ul{
+			width: 100%;
+			line-height: 35px;
+			text-align: center;
+			float: none !important;
+		}
+	}
+}
