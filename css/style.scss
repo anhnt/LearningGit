@@ -4,7 +4,11 @@ html,body{
 	font-size: 12px;
 	font-weight: normal;
 }
-
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
 section.social{
 	background-color: #25292c;
 	color: #fff;
@@ -18,53 +22,7 @@ section.social{
 		text-decoration: none;
 		cursor: pointer;
 	}
-	ul.social-share{
-		list-style: none;
-		li{
-			display: inline-block;
-			*display: inline;
-			a{
-				line-height: 35px;
-				color: #fff;
-				i.fa-stack-1x{
-					color: #666;
-				}
-				i.fa-circle{
-					@include transition(all .5s ease-in-out);
-				}
-			}
-			&:hover{
-				i.fa-stack-1x{
-				 	color: #fff;
-				}
-			}
-			&.facebook:hover{
-				 i.fa-circle{
-				 	color: #4c66a4;
-				 }
-			}
-			&.twitter:hover{
-				 i.fa-circle{
-				 	color: #2c77ba;
-				 }
-			}
-			&.dribbble:hover{
-				 i.fa-circle{
-				 	color: #ea4c89;
-				 }
-			}
-			&.linkedin:hover{
-				 i.fa-circle{
-				 	color: #006699;
-				 }
-			}
-			&.rss:hover{
-				 i.fa-circle{
-				 	color: #ff6600;
-				 }
-			}
-		}
-	}
+	
 	div.search{
 		display: inline-block;
 		line-height: 35px;
@@ -88,6 +46,55 @@ section.social{
 				width: 170px;
 				cursor: text;
 			}
+		}
+	}
+}
+
+
+// Socical share block for header and footer
+ul.social-share{
+	li{
+		display: inline-block;
+		*display: inline;
+		a{
+			line-height: 35px;
+			color: #fff;
+			i.fa-stack-1x{
+				color: #666;
+			}
+			i.fa-circle{
+				@include transition(all .5s ease-in-out);
+			}
+		}
+		&:hover{
+			i.fa-stack-1x{
+			 	color: #fff;
+			}
+		}
+		&.facebook:hover{
+			 i.fa-circle{
+			 	color: #4c66a4;
+			 }
+		}
+		&.twitter:hover{
+			 i.fa-circle{
+			 	color: #2c77ba;
+			 }
+		}
+		&.dribbble:hover{
+			 i.fa-circle{
+			 	color: #ea4c89;
+			 }
+		}
+		&.linkedin:hover{
+			 i.fa-circle{
+			 	color: #006699;
+			 }
+		}
+		&.rss:hover{
+			 i.fa-circle{
+			 	color: #ff6600;
+			 }
 		}
 	}
 }
@@ -125,6 +132,26 @@ section.main-header{
 	}
 }
 
+footer{
+	section.main-footer{
+		background-color: #323b44;
+		color: #fff;
+		ul.contact{
+			margin: 0;
+			padding: 0;
+		}
+	}
+	section.copyright{
+		background-color: #25292c;
+		div.copyname{
+			line-height: 35px;
+			color: #fff;
+		}
+	}
+}
+
+
+// Override for full-width slider
 .fullwidthbanner-container{
    width:100% !important;
    position:relative;
