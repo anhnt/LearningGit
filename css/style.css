@@ -86,3 +86,10 @@ section.main-header {
       border-top: 3px solid #0488cd; }
     section.main-header #menu ul ul {
       margin-left: 1px; }
+
+.fullwidthbanner-container {
+  width: 100% !important;
+  position: relative;
+  padding: 0;
+  max-height: 450px !important;
+  overflow: hidden; }

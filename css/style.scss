@@ -124,3 +124,11 @@ section.main-header{
 		}
 	}
 }
+
+.fullwidthbanner-container{
+   width:100% !important;
+   position:relative;
+   padding:0;
+   max-height:450px !important;  // Same value as in OPTIONS the <strong>startheight</strong> parameter
+   overflow:hidden;
+}
