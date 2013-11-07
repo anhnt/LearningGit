@@ -1,13 +1,17 @@
-@import "sass/_mixins";
+@import "bootstrap";
 
+// Overidde bootstrap
+
+*{
+	margin: 0;
+	padding: 0;
+}
 html,body{
 	font-size: 12px;
 	font-weight: normal;
 }
 ul{
 	list-style: none;
-	margin: 0;
-	padding: 0;
 }
 section.social{
 	background-color: #25292c;
@@ -101,37 +105,59 @@ ul.social-share{
 section.main-header{
 	background-color: #323b44;
 	#menu{
-		margin-bottom: 0;
+		// Override bootstrap
 		&>li>a{
-			line-height: 85px;
 			font-size: 16px;
-		}
-		&>li:hover>a, &>li.active>a{
-			background-color: #252c34;
-		}
-		&>li a{
-			background: #323b44;
-			border: none;
 			color: #fff;
+			b.caret{
+				border-top-color: #fff;
+				border-bottom-color: #fff;
+			}
 		}
-		ul a{
-			border-top:1px solid #414f5a;
+		&>li:hover>a, &>li.active>a, &>li.open a, &>li.open:hover a{
 			background-color: #252c34;
-			@include transition(all .2s ease-in-out);
 		}
-		ul a:hover{
-			background-color: #2f3843;
-			padding-left: 20px;
-		}
-		ul{
-			border-top: 3px solid #0488cd;
-		}
-		ul ul{
-			margin-left: 1px;
+		
+		.dropdown-menu{
+			padding: 0;
+			border-top: 3px solid #0488cd !important;
+			background-color: #252c34;
+			a{
+				@include transition(all .3s ease-in-out);
+				color: #fff;
+			}
+			li:hover a{
+				padding-left: 20px;
+				color: #0488cd;
+				background-color: #323b44; 
+			}
 		}
 	}
 }
-
+#main{
+	.gallery-title{
+		@include gradient-vertical(#f8f8f8, #fafafa);
+	}
+	.box{
+		border: 5px solid #fff;
+		cursor: pointer;
+		height: 182px;
+		float: left;
+		margin: 5px;
+		position: relative;
+		overflow: hidden;
+		width: 200px;
+		@include box-shadow(1px 1px 1px 1px #ccc);
+		img{
+			position: absolute;
+			left: 0;
+			@include transition(all 300ms ease-out);
+		}
+	}
+	.row>div{
+		margin-top: 10px;
+	}
+}
 footer{
 	section.main-footer{
 		background-color: #323b44;
@@ -144,10 +170,10 @@ footer{
 	section.copyright{
 		background-color: #25292c;
 		ul.social-share{
-			line-height: 60px;
+			line-height: 35px;
 		}
 		div.copyname{
-			line-height: 60px;
+			line-height: 35px;
 			color: #fff;
 		}
 	}
@@ -165,6 +191,14 @@ footer{
 
 // Responsive style
 // Xtra small devices
+@media (min-width: 768px){
+	#menu>li>a{
+		line-height: 60px;
+	}
+	#menu{
+		float: right !important;
+	}
+}
 @media (max-width: 767px){
 	header{
 		div.navbar-header{
@@ -176,13 +210,20 @@ footer{
 				}	
 			}
 		}
+		#menu{
+			&>li>a{
+				line-height: 20px;
+			}
+		}
 	}
 	footer{
 		div, ul{
 			width: 100%;
 			line-height: 35px;
-			text-align: center;
 			float: none !important;
+		}
+		.copyname{
+			text-align: center;
 		}
 	}
 }
