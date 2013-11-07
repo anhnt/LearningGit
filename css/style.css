@@ -5104,8 +5104,8 @@ section.main-header {
     transform: scale(1.6); }
     #main .box:hover img .scale-caption {
       opacity: 1; }
-#main .row > div {
-  margin-top: 10px; }
+#main .row .box {
+  margin: 10px auto; }
 
 footer section.main-footer {
   background-color: #323b44;
@@ -5129,11 +5129,10 @@ footer section.copyright {
   overflow: hidden; }
 
 @media (min-width: 768px) {
-  #menu > li > a {
-    line-height: 60px; }
-
   #menu {
-    float: right !important; } }
+    float: right !important; }
+    #menu > li > a {
+      line-height: 60px; } }
 @media (max-width: 767px) {
   header div.navbar-header button {
     background-color: #0488cd;
