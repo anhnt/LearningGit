@@ -1,3 +1,1 @@
-My project just for learning git
-
-
+My project just for learning git only
